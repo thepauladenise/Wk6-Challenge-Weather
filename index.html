@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="Assets/style.css">
+
+    <!--Connecting Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather">
+        <!--City Search-->
+        <input type="search" class="weather_search" placeholder="Your City">
+
+        <!--Today's weather section-->
+        <div class="weather_today">
+            <div class="weather_details">
+                <h2 class="weather_city">City</h2>
+                <p class="weather_day">Day</p>
+                <div class="weather_current">
+                    <p class="weather_indicator weather_indicator--humidity"><span class="value">50</span>%</p>
+                    <p class="weather_indicator weather_indicator--wind"><span class="value">West, 5</span> mph</p>
+                    <p class="weather_indicator weather_indicator--pressure"><span class="value">1050</span>hPa</p>
+                </div>
+            </div>
+            <img src="Assets/imgs/weather-icon_Sunny.png" alt="Clear Sky" class="weather_image">
+            <div class="weather-temperature"><span class="value">+25</span>&deg;F</div>
+        </div>
+        
+        <!--Forecast Section-->
+        <div class="weather_forecast">
+            <!--Tomorrow aka Day 1-->
+            <article class="weather_forecast_item">
+                <img src="Assets/imgs/weather-icon_Partly_Sunny.png" alt="Partly Sunny" class="weather_forecast_icon">
+                <h3 class="weather_forecast_day">Day</h3>
+                <p class="weather_forecast_temperature"><span class="value">+25</span>&deg;F</p>
+            </article>
+            <!--Day 2-->
+            <article class="weather_forecast_item">
+                <img src="Assets/imgs/weather-icon_Partly_Sunny.png" alt="Partly Sunny" class="weather_forecast_icon">
+                <h3 class="weather_forecast_day">Day</h3>
+                <p class="weather_forecast_temperature"><span class="value">+25</span>&deg;F</p>
+            </article>
+            <!--Day 3-->
+            <article class="weather_forecast_item">
+                <img src="Assets/imgs/weather-icon_Partly_Sunny.png" alt="Partly Sunny" class="weather_forecast_icon">
+                <h3 class="weather_forecast_day">Day</h3>
+                <p class="weather_forecast_temperature"><span class="value">+25</span>&deg;F</p>
+            </article>
+            <!--Day 4-->
+            <article class="weather_forecast_item">
+                <img src="Assets/imgs/weather-icon_Partly_Sunny.png" alt="Partly Sunny" class="weather_forecast_icon">
+                <h3 class="weather_forecast_day">Day</h3>
+                <p class="weather_forecast_temperature"><span class="value">+25</span>&deg;F</p>
+            </article>
+            <!--Day 5-->
+            <article class="weather_forecast_item">
+                <img src="Assets/imgs/weather-icon_Partly_Sunny.png" alt="Partly Sunny" class="weather_forecast_icon">
+                <h3 class="weather_forecast_day">Day</h3>
+                <p class="weather_forecast_temperature"><span class="value">+25</span>&deg;F</p>
+            </article>
+        </div>
+    </div>
+    <script src="Assets/script.js"></script>
+</body>
+</html>
